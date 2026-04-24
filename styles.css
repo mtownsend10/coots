@@ -856,6 +856,13 @@ a:hover { color: var(--sunset-deep); }
   }
 
   .hero { padding: 80px 0 100px; }
+  .hero-sun {
+    top: 40px;
+    right: -60px;
+    width: 180px;
+    height: 180px;
+    opacity: .55;
+  }
   .hero-meta { grid-template-columns: 1fr; gap: 20px; }
   .hero-meta strong { font-size: 18px; }
 
