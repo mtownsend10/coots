@@ -496,6 +496,45 @@ a:hover { color: var(--sunset-deep); }
   background: var(--kelp);
 }
 
+/* New: lead paragraph and section label for the housing issue */
+.issue-lead {
+  font-size: 19px !important;
+  line-height: 1.55 !important;
+  margin-bottom: 22px !important;
+}
+.issue-label {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin: 10px 0 14px;
+}
+.issue-bullets.wide li {
+  padding: 10px 0 10px 22px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.issue-bullets.wide li::before {
+  top: 19px;
+}
+.issue-bullets li strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+.platform-foot {
+  max-width: 68ch;
+  margin: 48px auto 0;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(11,38,56,.65);
+  font-style: italic;
+  font-family: var(--serif);
+}
+
 /* Make first issue span full width as a feature */
 .issue:first-child {
   grid-column: 1 / -1;
@@ -504,11 +543,13 @@ a:hover { color: var(--sunset-deep); }
   border-color: var(--ink);
 }
 .issue:first-child .issue-num { color: var(--coral); }
-.issue:first-child h3 { color: var(--bone); font-size: 34px; max-width: 20ch; }
-.issue:first-child p { color: rgba(251,249,244,.82); font-size: 18px; max-width: 66ch; }
+.issue:first-child h3 { color: var(--bone); font-size: 38px; max-width: 22ch; }
+.issue:first-child p { color: rgba(251,249,244,.85); font-size: 18px; max-width: 72ch; }
+.issue:first-child .issue-label { color: var(--coral); }
 .issue:first-child .issue-bullets { border-top-color: rgba(255,255,255,.15); }
-.issue:first-child .issue-bullets li { color: rgba(251,249,244,.76); }
+.issue:first-child .issue-bullets li { color: rgba(251,249,244,.82); }
 .issue:first-child .issue-bullets li::before { background: var(--coral); }
+.issue:first-child .issue-bullets li strong { color: var(--bone); }
 
 /* ---------- RECORD ---------- */
 .record {
