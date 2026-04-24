@@ -1,0 +1,7 @@
+# Preview / tooling artifacts
+.claude/
+.playwright-mcp/
+*.png
+
+# OS
+.DS_Store
