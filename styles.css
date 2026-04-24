@@ -297,6 +297,59 @@ a:hover { color: var(--sunset-deep); }
   letter-spacing: .02em;
 }
 
+/* ---------- INTRO BAND (Meet Mike) ---------- */
+.intro {
+  background: var(--sand);
+  padding: 80px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.intro-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.intro-portrait {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 5 / 8;
+  overflow: hidden;
+  border-radius: var(--r);
+  box-shadow: var(--shadow-2);
+  background: var(--ink);
+  transform: rotate(1deg);
+}
+.intro-portrait img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  display: block;
+}
+.intro-copy .eyebrow { margin-bottom: 14px; }
+.intro-h {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 20px;
+  color: var(--ink);
+}
+.intro-lead {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(11,38,56,.85);
+  margin: 0 0 28px;
+  max-width: 62ch;
+}
+.btn-small {
+  padding: 12px 22px;
+  font-size: 14px;
+}
+
 /* ---------- LOGO BAR ---------- */
 .logobar {
   background: var(--ink);
@@ -907,7 +960,10 @@ a:hover { color: var(--sunset-deep); }
   .hero-meta { grid-template-columns: 1fr; gap: 20px; }
   .hero-meta strong { font-size: 18px; }
 
-  .story, .platform, .record, .whynow, .endorse, .join, .pullquote { padding: 72px 0; }
+  .story, .platform, .record, .whynow, .endorse, .join, .pullquote, .intro { padding: 72px 0; }
+
+  .intro-grid { grid-template-columns: 1fr; gap: 32px; }
+  .intro-portrait { width: 100%; max-width: 320px; margin: 0 auto; }
 
   .story-grid { grid-template-columns: 1fr; gap: 40px; }
   .story-portrait { position: static; max-width: 280px; margin: 0 auto; }
