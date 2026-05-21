@@ -339,15 +339,17 @@ a:hover { color: var(--green-deep); }
     var(--navy-deep);
   padding: 36px 0 32px;
 }
-/* Hand-drawn lime-green top border */
+/* Hand-drawn lime-green top border — SVG with turbulence-displaced edges.
+   Pseudo extends slightly above .pillars so the SVG's transparent top
+   margin (above the green rect) sits over the white hero, not the navy. */
 .pillars::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -6px;
   left: 0;
   right: 0;
-  aspect-ratio: 2000 / 19;
-  background: url('assets/pillar-top-line.png') center top / 100% 100% no-repeat;
+  height: 14px;
+  background: url('assets/pillar-top-line.svg') center top / 100% 100% no-repeat;
   pointer-events: none;
 }
 .pillars-grid {
