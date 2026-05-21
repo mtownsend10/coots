@@ -38,6 +38,12 @@
   /* -------- METRICS -------- */
   --r:             10px;
   --wrap:          1200px;
+
+  /* -------- TEXTURES -------- */
+  /* Stylized tropical-leaf print. Renders as dark silhouettes at low opacity,
+     so layering it over any colored background darkens the base into a soft
+     leaf texture. Pair with a solid color via the shorthand below. */
+  --leaf-tex:      url('assets/leaf-pattern.svg') center / 480px auto repeat;
 }
 
 * { box-sizing: border-box; }
@@ -334,9 +340,7 @@ a:hover { color: var(--green-deep); }
 /* ---------- PILLARS ---------- */
 .pillars {
   position: relative;
-  background:
-    url('assets/pillar-leaf-texture.png') center / 600px auto repeat,
-    var(--navy-deep);
+  background: var(--leaf-tex), var(--navy-deep);
   padding: 36px 0 32px;
 }
 /* Hand-drawn lime-green top border — SVG with turbulence-displaced edges.
@@ -530,11 +534,9 @@ a:hover { color: var(--green-deep); }
 
 /* ---------- PULLQUOTE ---------- */
 .pullquote {
-  background: var(--paper);
+  background: var(--leaf-tex), var(--green-deep);
   padding: 110px 0;
   position: relative;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
 }
 .pullquote blockquote {
   font-family: var(--serif);
@@ -545,7 +547,7 @@ a:hover { color: var(--green-deep); }
   letter-spacing: -0.005em;
   max-width: 32ch;
   margin: 0 auto;
-  color: var(--navy);
+  color: var(--bone);
   text-align: center;
   position: relative;
 }
@@ -553,7 +555,7 @@ a:hover { color: var(--green-deep); }
   position: absolute;
   left: -.4em; top: -.3em;
   font-size: 1.6em;
-  color: var(--green);
+  color: var(--green-soft);
   font-family: var(--sans);
   font-style: normal;
   font-weight: 700;
@@ -564,7 +566,7 @@ a:hover { color: var(--green-deep); }
   font-size: 13px;
   letter-spacing: .22em;
   text-transform: uppercase;
-  color: rgba(27,77,124,.6);
+  color: rgba(251,249,244,.7);
   font-weight: 600;
   text-align: center;
 }
@@ -699,7 +701,7 @@ a:hover { color: var(--green-deep); }
 /* ---------- RECORD ---------- */
 .record {
   padding: 120px 0;
-  background: var(--navy);
+  background: var(--leaf-tex), var(--navy);
   color: var(--bone);
 }
 .record .eyebrow { color: var(--green-soft); }
@@ -930,7 +932,12 @@ a:hover { color: var(--green-deep); }
 
 /* ---------- FOOTER ---------- */
 .foot {
-  background: var(--navy-deep);
+  /* Tint layer on top of the leaf texture dials its intensity back so the
+     footer's wide negative space doesn't make the print feel too loud. */
+  background:
+    linear-gradient(rgba(16,58,99,.45), rgba(16,58,99,.45)),
+    var(--leaf-tex),
+    var(--navy-deep);
   color: rgba(251,249,244,.75);
   padding: 80px 0 24px;
 }
