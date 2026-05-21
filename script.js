@@ -15,14 +15,3 @@
     });
   });
 })();
-
-// Donation amount selection feedback
-(function () {
-  document.querySelectorAll('.donate-amounts .amt').forEach((el) => {
-    el.addEventListener('click', (e) => {
-      e.preventDefault();
-      document.querySelectorAll('.donate-amounts .amt').forEach((x) => x.classList.remove('is-selected'));
-      el.classList.add('is-selected');
-    });
-  });
-})();
