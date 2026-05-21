@@ -534,7 +534,13 @@ a:hover { color: var(--green-deep); }
 
 /* ---------- PULLQUOTE ---------- */
 .pullquote {
-  background: var(--leaf-tex), var(--green-deep);
+  /* Green base reads lighter than the navy sections, so the same leaf print
+     prints darker against it. A green tint layer mutes the texture back to
+     a subtle register. */
+  background:
+    linear-gradient(rgba(63,88,36,.45), rgba(63,88,36,.45)),
+    var(--leaf-tex),
+    var(--green-deep);
   padding: 110px 0;
   position: relative;
 }
