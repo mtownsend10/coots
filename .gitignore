@@ -1,7 +1,7 @@
 # Preview / tooling artifacts
 .claude/
 .playwright-mcp/
-*.png
+/*.png
 
 # OS
 .DS_Store
