@@ -228,15 +228,16 @@ a:hover { color: var(--sunset-deep); }
 .hero-mike {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -200px;
   z-index: -1;
-  width: 56%;
-  max-width: 720px;
+  height: 125%;
+  max-height: 930px;
+  width: auto;
   pointer-events: none;
 }
 .hero-mike img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
   display: block;
   filter: drop-shadow(0 12px 24px rgba(27,77,124,.18));
 }
@@ -1056,9 +1057,15 @@ a:hover { color: var(--sunset-deep); }
       linear-gradient(180deg, rgba(251,249,244,.96) 0%, rgba(251,249,244,.88) 45%, rgba(251,249,244,.35) 75%, rgba(251,249,244,0) 100%);
   }
   .hero-mike {
-    width: 92%;
-    max-width: 480px;
-    right: -40px;
+    height: auto;
+    max-height: 420px;
+    width: auto;
+    right: -20px;
+    bottom: 0;
+  }
+  .hero-mike img {
+    height: 420px;
+    max-height: 60vh;
   }
   .hero-leadership { font-size: clamp(48px, 14vw, 72px); }
   .hero-script { font-size: clamp(32px, 8vw, 44px); }
