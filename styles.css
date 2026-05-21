@@ -202,10 +202,10 @@ a:hover { color: var(--green-deep); }
 .hero {
   position: relative;
   color: var(--navy);
+  background: var(--bone);
   overflow: hidden;
   isolation: isolate;
   min-height: 640px;
-  padding: 0;
 }
 .hero-bg {
   position: absolute;
@@ -215,33 +215,22 @@ a:hover { color: var(--green-deep); }
 }
 .hero-photo {
   position: absolute;
-  inset: 0;
-  background-image: url('assets/hero-napali.jpg');
-  background-size: cover;
-  background-position: center 30%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* Match the image's intrinsic aspect ratio so the box hugs the image — the
+     fade gradient on the box then always tracks the visible image edge. */
+  aspect-ratio: 1600 / 1197;
+  width: auto;
+  max-width: 65%;
+  background:
+    linear-gradient(90deg, var(--bone) 0%, rgba(251,249,244,0.92) 14%, rgba(251,249,244,0.55) 34%, rgba(251,249,244,0) 60%),
+    url('assets/hero-mike-banner.jpg') right center / cover no-repeat;
 }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(90deg, var(--bone) 0%, rgba(251,249,244,.95) 30%, rgba(251,249,244,.55) 55%, rgba(251,249,244,0) 78%),
-    linear-gradient(180deg, rgba(251,249,244,.0) 0%, rgba(251,249,244,.25) 100%);
-}
-.hero-mike {
-  position: absolute;
-  right: 0;
-  bottom: -200px;
-  z-index: -1;
-  height: 125%;
-  max-height: 930px;
-  width: auto;
-  pointer-events: none;
-}
-.hero-mike img {
-  height: 100%;
-  width: auto;
-  display: block;
-  filter: drop-shadow(0 12px 24px rgba(27,77,124,.18));
+  background: linear-gradient(180deg, rgba(251,249,244,0) 70%, rgba(251,249,244,0.6) 100%);
 }
 .hero-wrap {
   position: relative;
@@ -286,6 +275,7 @@ a:hover { color: var(--green-deep); }
   line-height: 1.05;
   margin-top: 12px;
   padding-left: 8px;
+  white-space: nowrap;
 }
 
 .hero-lede {
@@ -343,49 +333,60 @@ a:hover { color: var(--green-deep); }
 
 /* ---------- PILLARS ---------- */
 .pillars {
-  background: var(--navy);
-  padding: 28px 0;
+  position: relative;
+  background:
+    url('assets/pillar-leaf-texture.png') center / 600px auto repeat,
+    var(--navy-deep);
+  padding: 36px 0 32px;
+}
+/* Hand-drawn lime-green top border */
+.pillars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  aspect-ratio: 2000 / 19;
+  background: url('assets/pillar-top-line.png') center top / 100% 100% no-repeat;
+  pointer-events: none;
 }
 .pillars-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 .pillar {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
   color: var(--bone);
-  padding: 14px 18px;
+  padding: 8px 18px;
   position: relative;
+  flex: 0 1 auto;
 }
 .pillar + .pillar::before {
   content: "";
   position: absolute;
-  left: -8px;
-  top: 18%;
-  bottom: 18%;
-  width: 1px;
-  background: rgba(143,174,107,.35);
+  left: -10px;
+  top: 12%;
+  bottom: 12%;
+  width: 2px;
+  background: var(--green-soft);
+  opacity: .85;
 }
 .pillar-icon {
-  flex: 0 0 52px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: var(--bone);
-  color: var(--green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  display: block;
 }
-.pillar-icon svg { width: 28px; height: 28px; }
-.pillar-text { line-height: 1.15; }
+.pillar-text { line-height: 1.2; }
 .pillar-text h3 {
   font-family: var(--sans);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--bone);
@@ -393,8 +394,8 @@ a:hover { color: var(--green-deep); }
 }
 .pillar-text p {
   font-family: var(--sans);
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 800;
+  font-size: 17px;
   letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--green-soft);
@@ -997,29 +998,24 @@ a:hover { color: var(--green-deep); }
   }
 
   .hero { min-height: auto; }
-  .hero-wrap { padding-top: 56px; padding-bottom: 380px; }
+  .hero-wrap { padding-top: 56px; padding-bottom: 72px; }
   .hero-content { max-width: 100%; }
-  .hero-overlay {
+  .hero-photo {
+    inset: 0;
+    width: 100%;
+    max-width: none;
+    aspect-ratio: auto;
     background:
-      linear-gradient(180deg, rgba(251,249,244,.96) 0%, rgba(251,249,244,.88) 45%, rgba(251,249,244,.35) 75%, rgba(251,249,244,0) 100%);
+      linear-gradient(rgba(251,249,244,.78), rgba(251,249,244,.78)),
+      url('assets/hero-mike-banner.jpg') center / cover no-repeat;
   }
-  .hero-mike {
-    height: auto;
-    max-height: 420px;
-    width: auto;
-    right: -20px;
-    bottom: 0;
-  }
-  .hero-mike img {
-    height: 420px;
-    max-height: 60vh;
-  }
+  .hero-overlay { background: none; }
   .hero-leadership { font-size: clamp(48px, 14vw, 72px); }
-  .hero-script { font-size: clamp(32px, 8vw, 44px); }
+  .hero-script { font-size: clamp(32px, 8vw, 44px); white-space: normal; }
 
-  .pillars-grid { grid-template-columns: 1fr; gap: 8px; }
+  .pillars-grid { flex-direction: column; gap: 8px; align-items: flex-start; }
   .pillar + .pillar::before { display: none; }
-  .pillar { padding: 12px 12px; }
+  .pillar { padding: 12px 18px; flex: 0 0 auto; }
 
   .story, .platform, .record, .whynow, .endorse, .join, .pullquote, .intro { padding: 72px 0; }
 
