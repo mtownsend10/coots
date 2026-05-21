@@ -9,21 +9,19 @@
 <meta property="og:description" content="Affordable housing, working infrastructure, and quality of life — a Kauaʻi worth fighting for." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Yellowtail&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230b2638'/><path d='M4 20 Q8 14 12 20 T20 20 T28 20' stroke='%23d97547' stroke-width='2.5' fill='none' stroke-linecap='round'/></svg>" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ffffff'/><path d='M6 22 L13 11 L17 16 L21 8 L26 22 Z' fill='%23557530'/><path d='M4 26 Q9 23 14 26 T24 26 T30 26' stroke='%231b4d7c' stroke-width='2.2' fill='none' stroke-linecap='round'/></svg>" />
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap nav-wrap">
-    <a href="#top" class="brand" aria-label="Mike Coots for Kauaʻi">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 44 28" width="44" height="28"><path d="M2 17 Q8 8 14 17 T26 17 T42 17" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
-      </span>
+    <a href="#top" class="brand" aria-label="Mike Coots for County Council">
+      <img class="brand-logo" src="assets/coots-logo.png" alt="" aria-hidden="true" />
       <span class="brand-text">
-        <span class="brand-name">Coots</span>
-        <span class="brand-sub">for Kauaʻi</span>
+        <span class="brand-name"><span class="brand-mike">Mike</span> <span class="brand-coots">Coots</span></span>
+        <span class="brand-sub">For County Council</span>
       </span>
     </a>
     <nav class="nav-links" aria-label="Primary">
@@ -31,8 +29,7 @@
       <a href="#about">About</a>
       <a href="#record">Record</a>
       <a href="#endorsements">Endorsements</a>
-      <a href="#volunteer">Volunteer</a>
-      <a href="#donate" class="nav-cta">Donate</a>
+      <a href="#volunteer" class="nav-cta">Get Involved</a>
     </nav>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -45,50 +42,75 @@
 <!-- HERO ------------------------------------------------------------------ -->
 <section class="hero">
   <div class="hero-bg" aria-hidden="true">
-    <div class="hero-sky"></div>
-    <div class="hero-sun"></div>
-    <svg class="hero-waves" viewBox="0 0 1440 200" preserveAspectRatio="none">
-      <path d="M0 30 Q 240 -30 480 20 T 960 10 T 1440 20 L 1440 200 L 0 200 Z" fill="#0a3d4e" opacity=".85"/>
-      <path d="M0 80 Q 240 30 480 65 T 960 60 T 1440 70 L 1440 200 L 0 200 Z" fill="#072a38" opacity=".9"/>
-      <path d="M0 130 Q 240 100 480 115 T 960 110 T 1440 120 L 1440 200 L 0 200 Z" fill="#04131c"/>
-    </svg>
+    <div class="hero-photo"></div>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-mike" aria-hidden="true">
+    <img src="assets/mike-cutout.png" alt="" />
   </div>
 
   <div class="wrap hero-wrap">
-    <div class="hero-kicker">
-      <span class="tag">Democrat · Kauaʻi County Council · 2026</span>
+    <div class="hero-content">
+      <p class="hero-kicker">Mike Coots for Kauaʻi County Council &middot; 2026</p>
+      <h1 class="hero-title">
+        <span class="hero-leadership">Leadership</span>
+        <span class="hero-script">that keeps Kauaʻi home.</span>
+      </h1>
+      <p class="hero-lede">
+        A lifelong Kauaʻi resident, Mike Coots is ready to bring real leadership, true accountability, and a fresh perspective to County Council.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#about">Meet Mike</a>
+        <a class="btn btn-secondary" href="#platform">Our priorities</a>
+      </div>
     </div>
-    <h1 class="hero-title">
-      A Kauaʻi<br/>
-      <em>that works for</em><br/>
-      the people who live here.
-    </h1>
-    <p class="hero-lede">
-      Affordable housing for the families who keep this island running. Infrastructure that doesn&rsquo;t pass the buck. Quality of life for everyone who calls Kauaʻi home. I&rsquo;m Mike Coots &mdash; running for County Council with fresh ideas, real urgency, and one priority: the people of Kauaʻi.
-    </p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#platform">See the platform</a>
-      <a class="btn btn-ghost" href="#volunteer">Join the campaign <span aria-hidden="true">→</span></a>
-    </div>
-    <div class="hero-meta">
-      <div><strong>Housing, first</strong><span>Stay here. Come home.</span></div>
-      <div><strong>Infrastructure</strong><span>Landfill, water, accountability</span></div>
-      <div><strong>Quality of life</strong><span>Tourism, parks, ʻāina</span></div>
-    </div>
+  </div>
+</section>
+
+<!-- PILLARS ---------------------------------------------------------------- -->
+<section class="pillars" aria-label="Campaign pillars">
+  <div class="wrap pillars-grid">
+    <article class="pillar">
+      <div class="pillar-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><path d="M22 6c-7 0-12 5-12 12 0 4 2 7 5 8 1-7 6-12 12-13-1-4-3-7-5-7z" fill="currentColor"/></svg>
+      </div>
+      <div class="pillar-text">
+        <h3>People of Kauaʻi</h3>
+        <p>First.</p>
+      </div>
+    </article>
+    <article class="pillar">
+      <div class="pillar-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><path d="M4 24 L12 12 L17 18 L21 10 L28 24 Z" fill="currentColor"/></svg>
+      </div>
+      <div class="pillar-text">
+        <h3>Protect our island.</h3>
+        <p>Strong communities.</p>
+      </div>
+    </article>
+    <article class="pillar">
+      <div class="pillar-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><circle cx="10" cy="12" r="3.2" fill="currentColor"/><circle cx="22" cy="12" r="3.2" fill="currentColor"/><circle cx="16" cy="11" r="3.6" fill="currentColor"/><path d="M4 24c0-4 3-6 6-6s6 2 6 6zm12 0c0-4 3-6 6-6s6 2 6 6z" fill="currentColor"/></svg>
+      </div>
+      <div class="pillar-text">
+        <h3>Working together</h3>
+        <p>for Kauaʻi&rsquo;s future.</p>
+      </div>
+    </article>
   </div>
 </section>
 
 <!-- INTRO BAND ------------------------------------------------------------ -->
 <section class="intro">
   <div class="wrap intro-grid">
-    <figure class="intro-portrait" aria-label="Mike Coots on a Kauaʻi beach">
-      <img src="assets/diptych.jpg" alt="Mike Coots sitting on a Kauaʻi beach with Nā Pali cliffs behind him, snorkel and mask on his forehead, his prosthetic leg resting on the sand." />
+    <figure class="intro-portrait" aria-label="Mike Coots — official campaign portrait">
+      <img src="assets/mike-headshot.jpg" alt="Mike Coots sitting on a wooden bench under palm trees, smiling, wearing a gray Costa cap and t-shirt, his prosthetic leg visible." />
     </figure>
     <div class="intro-copy">
       <p class="eyebrow">Meet Mike</p>
       <h2 class="intro-h">Hi, I&rsquo;m Mike Coots.</h2>
       <p class="intro-lead">
-        I&rsquo;m a small-business owner from Kīlauea running for Kauaʻi County Council. Born and raised here, I&rsquo;m not a politician &mdash; my only special interest is the people of this island. For twenty years I&rsquo;ve built coalitions and moved laws through rooms that didn&rsquo;t want to pass them. I&rsquo;m bringing that work home with fresh ideas and the urgency this moment demands.
+        I&rsquo;m a small-business owner from Kīlauea running for Kauaʻi County Council. Born and raised here, I&rsquo;m not a politician &mdash; my only special interest is the people of this island. I&rsquo;m running with fresh ideas, real urgency, and a deep love for the place that shaped me.
       </p>
       <a class="btn btn-primary btn-small" href="#about">Read my full story <span aria-hidden="true">→</span></a>
     </div>
@@ -178,32 +200,32 @@
     <aside class="story-portrait">
       <figure class="portrait-frame">
         <img src="assets/mike-portrait.jpg" alt="Mike Coots underwater with a tiger shark, camera in hand, prosthetic leg visible." class="portrait-img" loading="lazy" />
-        <figcaption class="portrait-cap">The work I&rsquo;m known for &mdash; and the work I&rsquo;ve learned from.</figcaption>
+        <figcaption class="portrait-cap">Photography has taken me around the world. Kauaʻi has always been home.</figcaption>
       </figure>
     </aside>
 
     <div class="story-body">
       <p class="eyebrow">About Mike</p>
-      <h2 class="h2">A Kīlauea small-business owner,<br/><em>and someone who has moved hard laws.</em></h2>
+      <h2 class="h2">A Kīlauea small-business owner,<br/><em>and a neighbor first.</em></h2>
 
       <p class="lead">
-        Mike Coots was born and raised on Kauaʻi and lives in Kīlauea. He owns and operates a small photography business that works with local hotels, small businesses, and the visitor bureau. He is a neighbor before he is anything else.
+        Mike Coots was born and raised on Kauaʻi&rsquo;s North Shore and lives in Kīlauea today. He grew up with the ocean, the ʻāina, and the tight-knit communities that make this island unlike anywhere else on Earth. He is a neighbor before he is anything else.
       </p>
 
       <p>
-        In 1997, at eighteen, a tiger shark attacked him bodyboarding off the westside and he lost his right leg. Most people know that part. What came after is the part that prepared him for this work.
+        Months after graduating from Kapaʻa High, a tiger shark attacked him bodyboarding off Kekaha and took his right leg. Most people know that part. What came after is what prepared him for this work.
       </p>
 
       <p>
-        A decade later, he picked up a camera &mdash; and then a cause. He helped pass Hawaiʻi&rsquo;s first-in-the-nation ban on the shark-fin trade in 2010. He lobbied Congress for the federal Shark Conservation Act, which President Obama signed into law in 2011. He has testified at the United Nations and before committees in Washington. His 2023 book <em>Shark: Portraits</em> (Rizzoli) is eight years of that work.
+        Rather than stepping away, Mike stepped forward. He rebuilt his life on Kauaʻi, picked up a camera, and built a photography business that has taken him around the world &mdash; with work recognized well beyond Hawaiʻi&rsquo;s shores. Through it all, Kauaʻi has stayed the center of his life.
       </p>
 
       <p>
-        The point is not the sharks. The point is the pattern: show up prepared, build a coalition across political lines, write the bill in plain language, and keep showing up until the vote happens. That is the skill set this Council needs on housing. It is what Mike is bringing to the job.
+        As a business owner on this island, Mike has watched friends and family leave because they can no longer afford to stay. He&rsquo;s seen the communities he grew up in transformed by rising costs and unchecked growth. He&rsquo;s running for County Council not as a visitor, not as an investor, but as someone whose home is on the line &mdash; bringing grit, compassion, an unshakeable sense of place, and the courage to tackle hard problems head-on.
       </p>
 
       <p>
-        He is not a politician. His only special interest is the people of Kauaʻi. A fast learner, fair, and approachable &mdash; he believes the issues facing this island can be solved with creative, bold, and straight-forward solutions.
+        He is not a politician. His only special interest is the people of Kauaʻi. Kauaʻi shaped him. Now he wants to give back to the island that made him.
       </p>
 
       <div class="signature">
@@ -217,21 +239,21 @@
 <section id="record" class="record">
   <div class="wrap">
     <p class="eyebrow">What I bring</p>
-    <h2 class="h2">Not a politician. <em>Also not learning on the job.</em></h2>
+    <h2 class="h2">Not a politician. <em>Just a neighbor ready to lead.</em></h2>
     <p class="section-lede" style="color: rgba(251,249,244,.78);">
-      I&rsquo;m running with fresh ideas and the urgency this moment demands &mdash; and with the experience to turn those ideas into law from day one.
+      Fresh ideas, real urgency, and a lifetime on this island. Here&rsquo;s what I&rsquo;m bringing to the seat.
     </p>
 
     <div class="record-grid">
       <article class="rec">
         <div class="rec-year">Roots</div>
-        <h3>Born and raised on Kauaʻi.</h3>
-        <p>I live in Kīlauea. My stake in this island is generational, not seasonal &mdash; and my priority for the next two years is keeping local families here.</p>
+        <h3>Born and raised on Kauaʻi&rsquo;s North Shore.</h3>
+        <p>Kapaʻa High graduate. I live in Kīlauea today &mdash; my stake here is generational, not seasonal, and my priority is keeping local families on this island.</p>
       </article>
       <article class="rec">
-        <div class="rec-year">Record</div>
-        <h3>I&rsquo;ve moved real laws through rooms that didn&rsquo;t want to pass them.</h3>
-        <p>Helped pass Hawaiʻi&rsquo;s first-in-the-nation shark-fin ban (2010) and the federal Shark Conservation Act signed by President Obama (2011). I know how to build a coalition and bring a bill across the line.</p>
+        <div class="rec-year">Approach</div>
+        <h3>Listen first. Build coalitions. Get it done.</h3>
+        <p>Real change comes from showing up prepared, finding common ground across lines, and refusing to quit. That&rsquo;s the way I work &mdash; and the way this Council needs to work on housing.</p>
       </article>
       <article class="rec">
         <div class="rec-year">Work</div>
@@ -293,17 +315,17 @@
 <section id="volunteer" class="join">
   <div class="wrap join-grid">
     <div class="join-copy">
-      <p class="eyebrow">Get involved</p>
+      <p class="eyebrow">Stay in touch</p>
       <h2 class="h2">This is a neighbor-to-neighbor campaign.</h2>
       <p>
-        There is no out-of-state consultancy, no corporate PAC. Just people on this island who want it to keep being this island. Sign up to volunteer, host a sign, walk your neighborhood, or chip in what you can.
+        There is no out-of-state consultancy, no corporate PAC. Just people on this island who want it to keep being this island. Sign up for campaign updates &mdash; and tell us how you&rsquo;d like to help.
       </p>
       <ul class="ways-list">
-        <li><span>01</span> Host a yard sign</li>
-        <li><span>02</span> Talk to your neighbors</li>
-        <li><span>03</span> Join a weekend canvass</li>
-        <li><span>04</span> Phone bank from home</li>
-        <li><span>05</span> Chip in $5, $25, or $250</li>
+        <li><span>01</span> Get campaign updates by email</li>
+        <li><span>02</span> Host a yard sign</li>
+        <li><span>03</span> Talk to your neighbors</li>
+        <li><span>04</span> Join a weekend canvass</li>
+        <li><span>05</span> Share Mike&rsquo;s story online</li>
       </ul>
     </div>
 
@@ -325,35 +347,17 @@
         <input type="text" name="zip" inputmode="numeric" pattern="[0-9]*" />
       </label>
       <fieldset class="full">
-        <legend>I can help by</legend>
+        <legend>I&rsquo;d also like to help by</legend>
         <label class="chk"><input type="checkbox" name="help" value="sign" /> Hosting a yard sign</label>
         <label class="chk"><input type="checkbox" name="help" value="canvass" /> Canvassing</label>
-        <label class="chk"><input type="checkbox" name="help" value="phone" /> Phone banking</label>
         <label class="chk"><input type="checkbox" name="help" value="host" /> Hosting a house party</label>
+        <label class="chk"><input type="checkbox" name="help" value="share" /> Sharing on social media</label>
         <label class="chk"><input type="checkbox" name="help" value="endorse" /> Endorsing</label>
       </fieldset>
-      <button class="btn btn-primary full" type="submit">Count me in</button>
-      <p class="form-ok" hidden>Mahalo &mdash; we&rsquo;ll be in touch.</p>
+      <button class="btn btn-primary full" type="submit">Sign me up</button>
+      <p class="form-ok" hidden>Mahalo &mdash; we&rsquo;ll be in touch with updates.</p>
       <p class="form-disclosure">By submitting, you agree to receive campaign updates. We will never sell or share your information.</p>
     </form>
-  </div>
-</section>
-
-<!-- DONATE CTA ------------------------------------------------------------ -->
-<section id="donate" class="donate">
-  <div class="wrap donate-wrap">
-    <div>
-      <p class="eyebrow light">Chip in</p>
-      <h2 class="h2 light">Every dollar here stays on island.</h2>
-      <p class="donate-sub">Grassroots donations fund signs, mailers, and the miles of door-knocking it takes to win an at-large council race.</p>
-    </div>
-    <div class="donate-amounts" role="group" aria-label="Donation amounts">
-      <a href="#" class="amt">$25</a>
-      <a href="#" class="amt">$50</a>
-      <a href="#" class="amt">$100</a>
-      <a href="#" class="amt">$250</a>
-      <a href="#" class="amt other">Other</a>
-    </div>
   </div>
 </section>
 
@@ -364,12 +368,10 @@
   <div class="wrap foot-grid">
     <div>
       <a href="#top" class="brand brand--light">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 44 28" width="44" height="28"><path d="M2 17 Q8 8 14 17 T26 17 T42 17" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
-        </span>
+        <img class="brand-logo" src="assets/coots-logo.png" alt="" aria-hidden="true" />
         <span class="brand-text">
-          <span class="brand-name">Coots</span>
-          <span class="brand-sub">for Kauaʻi</span>
+          <span class="brand-name"><span class="brand-mike">Mike</span> <span class="brand-coots">Coots</span></span>
+          <span class="brand-sub">For County Council</span>
         </span>
       </a>
       <p class="foot-tag">Affordable housing, working infrastructure, and quality of life &mdash; for everyone who calls Kauaʻi home.</p>
@@ -388,8 +390,7 @@
     <div class="foot-col">
       <h4>Get involved</h4>
       <ul>
-        <li><a href="#volunteer">Volunteer</a></li>
-        <li><a href="#donate">Donate</a></li>
+        <li><a href="#volunteer">Stay in touch</a></li>
         <li><a href="mailto:aloha@cootsforkauai.com">Contact</a></li>
       </ul>
     </div>
